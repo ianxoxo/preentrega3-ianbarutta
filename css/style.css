@@ -246,3 +246,78 @@ h4 {
 .footer__copyright span {
     display:block;
 }
+
+/*SMALL TABLETS*/
+
+@media screen and (min-width:600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-areas: "header header"
+            "me aside"
+            "gallery gallery"
+            "footer footer";
+    }
+
+    #me {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .title h1 {
+        font-size:2em;
+        text-align: left;
+    }
+
+    .title h3 {
+        text-align:left;
+    }
+
+    .portrait {
+        height:50vh;
+    }
+
+    #aside h4 {
+        display:none;
+    }
+
+    .footer {
+        max-width:97%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: auto 50%;
+    }
+
+    .title h1 {
+        font-size: 3em;
+    }
+    
+    .title h3 {
+        font-size:1.5em;
+    }
+
+    .item1 {
+        grid-column: 6 / span 6;
+    }
+
+    .item2 {
+        grid-row: 7 / 12;
+    }
+
+    #footer {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .grid-container {
+        grid-template-columns: auto 70%;
+    }
+    .portrait {
+        height: 70vh;
+    }
+}
