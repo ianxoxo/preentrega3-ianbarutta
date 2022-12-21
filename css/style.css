@@ -37,7 +37,7 @@ p {
     font-family: 'NeueHaas', sans-serif;
 }
 
-/*LAYOUT MOBILE FIRST - DEVICES BELOW 420PX */
+/*LAYOUT FOR MOBILE FIRST - DEVICES BELOW 600PX */
 
 .grid-container {
     display: grid;
@@ -252,7 +252,7 @@ h4 {
 @media screen and (min-width:600px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns: 40% auto;
         grid-template-areas: "header header"
             "me aside"
             "gallery gallery"
@@ -267,11 +267,11 @@ h4 {
 
     .title h1 {
         font-size:2em;
-        text-align: left;
+        text-align: center;
     }
 
     .title h3 {
-        text-align:left;
+        text-align:center;
     }
 
     .portrait {
@@ -287,6 +287,8 @@ h4 {
     }
 }
 
+/* NOTEBOOKS */
+
 @media screen and (min-width: 1024px) {
     .grid-container {
         grid-template-columns: auto 50%;
@@ -294,10 +296,12 @@ h4 {
 
     .title h1 {
         font-size: 3em;
+        text-align: left;
     }
     
     .title h3 {
         font-size:1.5em;
+        text-align:left;
     }
 
     .item1 {
@@ -312,6 +316,8 @@ h4 {
         padding-top: 0;
     }
 }
+
+/*DESKTOP*/
 
 @media screen and (min-width:1200px) {
     .grid-container {
