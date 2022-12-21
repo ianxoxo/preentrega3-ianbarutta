@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="grid-container grid-container--2">
         <header id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
@@ -56,7 +56,40 @@
             </div>
         </header>
 
-    
+        <main id="main">
+            <div class="wrapper">
+                <h2>Contacta <span>Conmigo</span></h2>
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <label for="fullname">Nombre Completo</label>
+                            <input type="text" id="fullname">
+                        </p>
+                        <p>
+                            <label for="email">Dirección de Email</label>
+                            <input type="email" id="email">
+                        </p>
+                        <p>
+                            <label for="phone">Número de teléfono</label>
+                            <input type="tel" id="phone">
+                        </p>
+                        <p>
+                            <label for="affair">Asunto</label>
+                            <input type="text" id="affair">
+                        </p>
+                        <p class="block">
+                            <label for="textarea">Mensaje</label>
+                            <textarea name="textarea" id="textarea" rows="10"></textarea>
+                        </p>
+                        <p class="block">
+                            <button class="block__button" type="submit">
+                                SEND
+                            </button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </main>
         
         <footer id="footer">
             <div class="container footer wow animate__animated animate__fadeInDown">
