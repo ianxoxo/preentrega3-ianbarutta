@@ -66,6 +66,10 @@ p {
     grid-area: gallery;
 }
 
+#main {
+    grid-area: me;
+}
+
 #footer {
     grid-area: footer;
     padding-top: 30px;
@@ -247,6 +251,33 @@ h4 {
     display:block;
 }
 
+.grid-projects {
+    display:grid; 
+    height:70vh;
+    row-gap:20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% auto;
+}
+
+.project1 {
+    background-image: url(../assets/img/basketball-img5.JPG);
+    margin: 10px;
+}
+
+.project1--description, .project2--description {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    font-size:0.7em;
+}
+
+.project2 {
+    background-image: url(../assets/img/basketball-img6.JPG);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
 /*SMALL TABLETS*/
 
 @media screen and (min-width:600px) {
@@ -257,6 +288,14 @@ h4 {
             "me aside"
             "gallery gallery"
             "footer footer";
+    }
+
+    .grid-container--projects {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                            "me"
+                            "footer";
     }
 
     #me {
