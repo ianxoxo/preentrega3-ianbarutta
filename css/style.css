@@ -32,8 +32,7 @@
     box-sizing: border-box;
 }
 
-body,
-.navbar {
+body, .navbar {
     background: var(--dark-white);
     scroll-behavior: smooth;
 }
@@ -312,6 +311,15 @@ h4 {
     margin-bottom:50px;
 }
 
+.flex-wrapper {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    gap:20px;
+    padding-bottom:60px;
+    padding-top:30px;
+}
+
 .contact-form {
     width:90%;
 }
@@ -369,6 +377,31 @@ h4 {
     color: var(--cream);
 }
 
+.about-me--grid {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about-me__pic {
+    width:100%;
+    border-radius: 10px;
+    margin:0 auto;
+}
+
+.about-me__text {
+    display:flex;
+    flex-flow: column wrap;
+    text-align:center;
+    justify-content:space-evenly;
+}
+
+.about-me {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    margin-top:30px;
+}
+
 /*SMALL TABLETS*/
 
 @media screen and (min-width:600px) {
@@ -386,6 +419,12 @@ h4 {
         grid-template-areas: "header"
             "me"
             "footer";
+    }
+
+    .about-me--grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        gap:10px;
     }
 
     #me {
@@ -433,6 +472,18 @@ h4 {
         grid-template-areas: "header"
             "me"
             "footer";
+    }
+
+    .about-me--grid {
+        gap:15px;
+    }
+
+    .about-me__text {
+        justify-content:center;
+    }
+
+    .about-me {
+        padding-bottom:40px;
     }
 
     .title h1 {
