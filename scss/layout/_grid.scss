@@ -51,25 +51,25 @@
     gap: 20px;
 
     .item1 {
-        background-image: url(../../assets/img/basketball-img1.JPG);
+        background-image: url(../assets/img/basketball-img1.JPG);
         grid-row: 1 / span 5;
         grid-column: 5/ span 6;
     }
 
     .item2 {
-        background-image: url(../../assets/img/basketball-img2.JPG);
+        background-image: url(../assets/img/basketball-img2.JPG);
         grid-row: 6/ span 6;
         grid-column: 7/ span 5;
     }
 
     .item3 {
-        background-image: url(../../assets/img/basketball-img3.JPG);
+        background-image: url(../assets/img/basketball-img3.JPG);
         grid-row: 6 / span 4;
         grid-column: 2 / span 4;
     }
 
     .item4 {
-        background-image: url(../../assets/img/basketball-img4.JPG);
+        background-image: url(../assets/img/basketball-img4.JPG);
         grid-row: 2/ span 3;
         grid-column: 2/ span 3;
     }
@@ -90,7 +90,7 @@
     grid-auto-rows: minmax(300px, auto);
 
     .self-portrait {
-        background-image: url(../../assets/img/self-portrait.jpg);
+        background-image: url(../assets/img/self-portrait.jpg);
         grid-column: 3 / span 8;
         grid-row: 2 / span 8;
         z-index: 60;
@@ -136,17 +136,17 @@
     }
 
     .project1 {
-        background-image: url(../../assets/img/basketball-img5.JPG);
+        background-image: url(../assets/img/basketball-img5.JPG);
     }
 
     .project2 {
-        background-image: url(../../assets/img/basketball-img6.JPG);
+        background-image: url(../assets/img/basketball-img6.JPG);
         grid-column: 2;
         grid-row: 2;
     }
 
     .project3 {
-        background-image: url(../../assets/img/graffiti.jpeg)
+        background-image: url(../assets/img/graffiti.jpeg)
     }
 
     .project1, .project2, .project3 {

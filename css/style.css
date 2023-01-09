@@ -67,19 +67,19 @@
   grid-auto-rows: minmax(250px, auto);
   gap: 20px; }
   .grid-gallery .item1 {
-    background-image: url(../../assets/img/basketball-img1.JPG);
+    background-image: url(../assets/img/basketball-img1.JPG);
     grid-row: 1 / span 5;
     grid-column: 5/ span 6; }
   .grid-gallery .item2 {
-    background-image: url(../../assets/img/basketball-img2.JPG);
+    background-image: url(../assets/img/basketball-img2.JPG);
     grid-row: 6/ span 6;
     grid-column: 7/ span 5; }
   .grid-gallery .item3 {
-    background-image: url(../../assets/img/basketball-img3.JPG);
+    background-image: url(../assets/img/basketball-img3.JPG);
     grid-row: 6 / span 4;
     grid-column: 2 / span 4; }
   .grid-gallery .item4 {
-    background-image: url(../../assets/img/basketball-img4.JPG);
+    background-image: url(../assets/img/basketball-img4.JPG);
     grid-row: 2/ span 3;
     grid-column: 2/ span 3; }
   .grid-gallery .grid-item {
@@ -104,7 +104,7 @@
   grid-template-rows: repeat(10, 1fr);
   grid-auto-rows: minmax(300px, auto); }
   .portrait .self-portrait {
-    background-image: url(../../assets/img/self-portrait.jpg);
+    background-image: url(../assets/img/self-portrait.jpg);
     grid-column: 3 / span 8;
     grid-row: 2 / span 8;
     z-index: 60; }
@@ -156,13 +156,13 @@
       opacity: 0.9;
       transform: scale(1.1); }
   .grid-projects .project1 {
-    background-image: url(../../assets/img/basketball-img5.JPG); }
+    background-image: url(../assets/img/basketball-img5.JPG); }
   .grid-projects .project2 {
-    background-image: url(../../assets/img/basketball-img6.JPG);
+    background-image: url(../assets/img/basketball-img6.JPG);
     grid-column: 2;
     grid-row: 2; }
   .grid-projects .project3 {
-    background-image: url(../../assets/img/graffiti.jpeg); }
+    background-image: url(../assets/img/graffiti.jpeg); }
   .grid-projects .project1, .grid-projects .project2, .grid-projects .project3 {
     margin: 10px; }
   .grid-projects .project--description {
@@ -298,15 +298,15 @@ body,
 /* LOCAL FONTS */
 @font-face {
   font-family: 'BaronNeue';
-  src: url(../../fonts/baron-neue/BaronNeue.otf); }
+  src: url(../fonts/baron-neue/BaronNeue.otf); }
 
 @font-face {
   font-family: 'NeueHaas';
-  src: url(../../fonts/neue-haas/NeueHaasDisplayMediu.ttf); }
+  src: url(../fonts/neue-haas/NeueHaasDisplayMediu.ttf); }
 
 @font-face {
   font-family: 'NeueHaasLight';
-  src: url(../../fonts/neue-haas/NeueHaasDisplayLight.ttf); }
+  src: url(../fonts/neue-haas/NeueHaasDisplayLight.ttf); }
 
 /* GOOGLE FONTS */
 /*GENERAL STYLES FOR TYPOGRAPHY*/
