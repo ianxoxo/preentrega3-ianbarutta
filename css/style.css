@@ -332,7 +332,7 @@ h2, h4 {
   font-size: 1.1875rem; }
 
 @media screen and (min-width: 1024px) {
-  .footer {
+  .footer__social-media, .footer__copyright {
     font-size: 1.25rem; } }
 
 * {
