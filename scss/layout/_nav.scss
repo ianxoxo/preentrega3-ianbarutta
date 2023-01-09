@@ -1,0 +1,52 @@
+@use '../utilities/functions';
+
+body,
+.navbar {
+    background: map-get($color-palette, dark-white);
+    scroll-behavior: smooth;
+}
+
+.navbar__logo {
+    height: pxToRem(60);
+}
+
+.nav-link {
+    font-family: $nav-font;
+}
+
+.nav-link {
+    padding-right: 1em;
+    position: relative;
+    font-size: 1em;
+    transition: all ease-in-out 1s;
+
+    &:hover {
+        color: map-get($color-palette, pastel-green);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: map-get($color-palette, pastel-green);
+        transition: all ease-in-out 1s;
+    }
+
+    &:hover::after {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .navbar__logo {
+        height: pxToRem(70);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .navbar__logo {
+        height: pxToRem(80);
+    }
+}

@@ -1,0 +1,40 @@
+@use '../utilities/mixins';
+
+.footer {
+    @include new-flex(flex-start, normal, column wrap);
+    gap: 60px;
+    text-transform: uppercase;
+
+    &__copyright {
+        @include new-flex(flex-end, normal, row nowrap);
+        text-align: right;
+        max-width:100%;
+        font-weight:bolder;
+        span {
+            display:block;
+        }
+    }
+
+    &__social-media {
+        @include new-flex(flex-start, normal, column wrap);
+        max-width:100%;
+        font-weight:bolder;
+
+        p{
+            margin-bottom:0;
+        }
+
+    }
+}
+
+@media screen and (min-width:600px){
+    .footer {
+        max-width:97%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    #footer {
+        padding-top: 0;
+    }
+}

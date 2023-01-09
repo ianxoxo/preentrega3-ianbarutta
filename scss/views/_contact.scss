@@ -1,0 +1,57 @@
+.contact-form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &>* {
+        padding: 1em;
+    }
+
+    form {
+
+        p {
+            padding: 1em;
+
+            label {
+                display: block;
+            }
+
+            input {
+                font-family: $contact-font;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: .7em;
+            outline: 0;
+            border: none;
+            background: none;
+            border-bottom: 1px solid map-get($color-palette,beige2);
+        }
+    }
+
+}
+
+.wrapper h2 {
+    padding: .8em;
+}
+
+.block {
+    textarea {
+        font-family: $contact-font;
+        width: 100%;
+    }
+
+    &__button {
+        width: 100%;
+        outline: 0;
+        border: none;
+        background-color: map-get($color-palette, pastel-green);
+        padding: .5em;
+        border-radius: 3px;
+        color: map-get($color-palette, cream);
+        font-weight:bolder;
+    }
+}

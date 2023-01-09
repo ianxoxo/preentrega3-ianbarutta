@@ -1,0 +1,43 @@
+@use '../utilities/mixins';
+
+.about-me {
+    @include new-flex(center, unset, column wrap);
+    gap:30px;
+    padding-bottom:1em;
+
+    &__pic {
+        width: 100%;
+        max-width:400px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        @include new-flex(space-evenly, unset, column wrap);
+        text-align: center;
+        gap:10px;
+        p {
+            font-size: .85rem;
+        }
+    }
+}
+
+@media screen and (min-width:700px){
+    .about-me{
+        @include new-flex(center, center, row nowrap);
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    #main {
+        padding-bottom: 40px;
+
+        .about-me {
+            gap: 15px;
+            &__text {
+                justify-content: center;
+            }
+        }
+    }
+}

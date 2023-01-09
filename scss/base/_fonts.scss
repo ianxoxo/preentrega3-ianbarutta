@@ -1,0 +1,52 @@
+@use '../utilities/functions';
+
+/* LOCAL FONTS */
+@font-face {
+    font-family: 'BaronNeue';
+    src: url(../../fonts/baron-neue/BaronNeue.otf);
+}
+
+@font-face {
+    font-family: 'NeueHaas';
+    src: url(../../fonts/neue-haas/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: 'NeueHaasLight';
+    src: url(../../fonts/neue-haas/NeueHaasDisplayLight.ttf);
+}
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+/*GENERAL STYLES FOR TYPOGRAPHY*/
+
+p {
+    font-family: $p-font2;
+    font-size:pxToRem(14);
+}
+
+h2 {
+    font-family: $title-font;
+    text-align:center;
+}
+
+h4 {
+    @extend h2
+}
+
+.title {
+    font-family: $title-font;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.title h1 {
+    font-weight: lighter;
+    font-size: pxToRem(40);
+}
+
+.title h3 {
+    font-size: pxToRem(19);
+}

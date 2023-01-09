@@ -1,0 +1,22 @@
+@mixin grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+}
+
+@mixin new-flex($justify, $align, $flex-flow) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flex-flow;
+}

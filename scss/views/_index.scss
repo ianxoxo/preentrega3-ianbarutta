@@ -1,0 +1,51 @@
+@use '../utilities/mixins';
+
+@media screen and (min-width:600px) {
+    #me {
+        @include new-flex(center, center, row nowrap);
+    }
+
+    .title {
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #aside {
+    
+        h4 {
+            display: none;
+    
+        }
+    
+        .portrait {
+            height: 50vh;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        h1 {
+            font-size: 3em;
+            text-align: left;
+        }
+        h3 {
+            font-size: 1.5em;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .portrait {
+        height: 70vh;
+    }
+}
