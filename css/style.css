@@ -39,7 +39,11 @@
 @use '../utilities/functions';
 .grid-container {
   display: grid;
-  grid-template-areas: "header" "me" "aside" "gallery" "footer"; }
+  grid-template-areas: "header"
+ "me"
+ "aside"
+ "gallery"
+ "footer"; }
   .grid-container #header {
     grid-area: header;
     padding: 0.9375rem 0 1.875rem; }
@@ -187,11 +191,16 @@
   .grid-container {
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-areas: "header header" "me aside" "gallery gallery" "footer footer";
+    grid-template-areas: "header header"
+ "me aside"
+ "gallery gallery"
+ "footer footer";
     max-width: 100%; }
   .grid-container--2 {
     grid-template-columns: 100%;
-    grid-template-areas: "header" "me" "footer"; }
+    grid-template-areas: "header"
+ "me"
+ "footer"; }
   .grid-projects p {
     font-size: 1.2em;
     padding: 5px; } }
@@ -202,7 +211,9 @@
     grid-template-columns: auto 50%; }
   .grid-container--2 {
     grid-template-columns: 100%;
-    grid-template-areas: "header" "me" "footer"; }
+    grid-template-areas: "header"
+ "me"
+ "footer"; }
   .item1 {
     grid-column: 6 / span 6; }
   .item2 {
@@ -217,7 +228,9 @@
     grid-template-columns: auto 70%; }
   .grid-container--2 {
     grid-template-columns: 100%;
-    grid-template-areas: "header" "me" "footer"; }
+    grid-template-areas: "header"
+ "me"
+ "footer"; }
   .grid-projects p {
     font-size: 1.6em;
     padding: 15px; } }
