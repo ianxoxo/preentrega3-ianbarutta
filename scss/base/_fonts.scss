@@ -50,3 +50,9 @@ h4 {
 .title h3 {
     font-size: pxToRem(19);
 }
+
+@media screen and (min-width:1024px){
+    .footer {
+        font-size: pxToRem(20);
+    }
+}
