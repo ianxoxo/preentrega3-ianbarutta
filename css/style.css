@@ -225,7 +225,7 @@
 @use '../utilities/functions';
 body,
 .navbar {
-  background: #f5f9e9;
+  background: #F3EFF5;
   scroll-behavior: smooth; }
 
 .navbar__logo {
