@@ -15,7 +15,7 @@
 }
 
 .flex-wrapper {
-    @include new-flex(center, center, column wrap);
+    @include new-flex(center, flex-start, column wrap);
     gap:20px;
     padding-top:50px;
 }

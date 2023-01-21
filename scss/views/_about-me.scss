@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:900px){
     .about-me{
         @include new-flex(center, center, row nowrap);
     }

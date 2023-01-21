@@ -1,4 +1,5 @@
 @use '../utilities/functions';
+@use '../utilities/variables';
 
 /* LOCAL FONTS */
 @font-face {
@@ -31,8 +32,20 @@ h2 {
     text-align:center;
 }
 
+.about-me__title {
+    font-family: $p-font;
+}
+
 h4 {
     @extend h2
+}
+
+h5 {
+    font-family: $p-font;
+    font-weight:lighter;
+    span {
+        color: map-get($map: $color-palette, $key: "beige")
+    }
 }
 
 .title {
